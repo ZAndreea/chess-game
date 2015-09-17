@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<header>Play chess</header>
+	<div id="chess-div" class="chessboard-div"></div>
+	<div class="side-div">
+		<div>
+			<div class="move-counter black-move-counter">
+				<p>Player black</p><br>
+				<p class="black-turn">Not your turn</p><br>
+				<p class="black-moves">Moves so far: 0</p>
+			</div>
+			<div class="moved-pieces black-moved-pieces">
+				<ul id="black-ul"></ul>
+			</div>
+			<div class="captured-pieces black-captured-pieces">
+				<p id="black-piece-number">Captured pieces: 0</p>
+				<p id="black-captured-pieces-p" class="captured-pieces-p"></p>
+			</div>
+		</div>
+		<div class="white-div">
+			<div class="move-counter white-move-counter">
+				<p>Player white</p><br>
+				<p class="white-turn">Your turn!</p><br>
+				<p class="white-moves">Moves so far: 0</p>
+			</div>
+			<div class="moved-pieces white-moved-pieces">
+				<ul id="white-ul"></ul>
+			</div>
+			<div class="captured-pieces white-captured-pieces">
+				<p id="white-piece-number">Captured pieces: 0</p>
+				<p id="white-captured-pieces-p" class="captured-pieces-p"></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="generateMatrix.js"></script>
+	<script type="text/javascript" src="addChessboard.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
