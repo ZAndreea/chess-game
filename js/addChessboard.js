@@ -38,6 +38,8 @@
 			tableCell.setAttribute('ondragenter','return dragEnter(event)');
 			tableCell.setAttribute('ondragover','return dragOver(event)');
 			tableCell.setAttribute('ondrop','return dragDrop(event)');
+			tableCell.setAttribute('dropOffBoard','snapback');
+			
 
 			tableRow.appendChild(tableCell);
 
@@ -79,11 +81,11 @@
 							span.appendChild(spanText);
 							break;
 						case 3:
-							var spanText = document.createTextNode(String.fromCharCode(9818));
+							var spanText = document.createTextNode(String.fromCharCode(9819));
 							span.appendChild(spanText);
 							break;
 						case 4:
-							var spanText = document.createTextNode(String.fromCharCode(9819));
+							var spanText = document.createTextNode(String.fromCharCode(9818));
 							span.appendChild(spanText);
 							break;
 					};
@@ -106,11 +108,11 @@
 							span.appendChild(spanText);
 							break;
 						case 3:
-							var spanText = document.createTextNode(String.fromCharCode(9812));
+							var spanText = document.createTextNode(String.fromCharCode(9813));
 							span.appendChild(spanText);
 							break;
 						case 4:
-							var spanText = document.createTextNode(String.fromCharCode(9813));
+							var spanText = document.createTextNode(String.fromCharCode(9812));
 							span.appendChild(spanText);
 							break;
 					};
