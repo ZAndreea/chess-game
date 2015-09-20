@@ -1,10 +1,14 @@
 body {
-	background-color: white;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	font-family:georgia;  
+	font-family:georgia;
+	background-color: white;
+}
+a {
+	text-decoration: none;
+	color: black;
 }
 header {
 	margin-top:10px;
@@ -15,9 +19,9 @@ header {
 td.chessboard-cell {
 	height:80px;
 	width:80px;
-	background-color: white;
 	border:1px solid black;
 	padding:0;
+	background-color:white;
 }
 td.chessboard-cell span {
 	font-size:75px;
@@ -31,88 +35,106 @@ tr:nth-of-type(2n+1) td:nth-of-type(2n){
 .chess-piece-span {
 	cursor:move;
 }
-
 .side-div {
 	width:35%;
 	float:right;
-	padding:4px;
-	margin-top:30px;
+	padding:0;
 	position:relative;
-	top:80px;
-	height:650px;
+	top:50px;
 }
 .chessboard-div {
 	float:left;
 	position:relative;
 	left:20%;
-	margin-top:30px;
 	width:45%;
+	margin-top:30px;
 }
 .move-counter {
+	position:relative;
+	top:25px;
 	width:30%;
-	height:100px;
+	height:134px;
+	vertical-align:middle;
+	border-bottom:5px solid #A8A8A8;
 	background-color:#BABABA;
-	padding:2.5% 0;
 }
 .move-counter p {
+	position:relative;
+	top:17px;
 	text-align:center;
 }
 .move-counter p:nth-child(3) {
 	font-size:25px;
 }
 td.chessboard-index-cell {
-	width: 80px;
-	height: 80px;
-	background-color: white;
-	border: none;
-	padding: 0;
-	font-size: 30px;
-	text-align: center;
-	vertical-align: middle;
-}
-.moved-pieces {
-	background-color:#ddd;
-	width:400px;
-	height:134px;
-	overflow: auto;
+	width:80px;
+	height:80px;
+	border:none;
+	font-size:30px;
+	text-align:center;
+	vertical-align:middle;
+	background-color:white;
 }
 .move-counter, .moved-pieces {
-	position: relative;
+	display:inline-block;
+	position:relative;
 	border-bottom:2px solid #A8A8A8;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
-	display:inline-block;
-	border-top: 1px solid #ddd;
-	display: inline-block;
+	border-top:1px solid #ddd;
+}
+.moved-pieces {
+	top:25px;
+	width:64.5%;
+	height:134px;
+	background-color:#ddd;
+	overflow:auto;
 }
 .white-move-counter, .white-moved-pieces {
-	position: relative;
-	top:300px;
+	top:28px;
 }
 .moved-pieces ul li {
-	padding: 2px 5px;
-	font-size: 20px;
+	padding:2px 5px;
+	font-size:20px;
 }
 .moved-pieces ul li:nth-of-type(2n) {
-	background-color: #A8A8A8;
+	background-color:#A8A8A8;
 }
 .captured-pieces {
-	height: 160px;
-	width: 600px;
+	position:relative;
+	top:25px;
+	height:140px;
+	width:95%;
 	background-color:#ddd;
-	position: relative;
 }
 .captured-pieces-p {
 	height:inherit;
 }
 .black-captured-pieces {
-	top:2px;
+	top:28px;
 }
 .captured-pieces-p {
 	font-size:60px;
 }
 .white-div {
-	bottom:90px;
-	position: relative;
+	position:relative;
+	top:90px;
+}
+.restart {
+	height:35px;
+	font-size:20pt;
+	font-family:inherit;
+}
+.copyright {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	font-size:12pt;
+	text-align:center;
+	color:#ddd;
+	background-color:black;
+}
+.copyright a {
+	color:#ddd;
 }
